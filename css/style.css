@@ -1,0 +1,342 @@
+
+body {
+    margin: 0;
+  }
+
+  header{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    font-family: "Avenir Next";
+    font-style: normal;
+  }
+  
+  nav {
+    padding:20px;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Avenir Next";
+    font-size: 16px;
+    font-style: normal;
+    color: #4A4A4A;
+  }
+
+  header{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    font-family: "Avenir Next";
+    font-style: normal;
+  }
+
+  h1{
+    margin: 0px;
+    font-weight: 500;
+    font-size: 56px;
+  }
+
+  h4{
+    font-family: "Avenir Next";
+    font-size: 42px;
+    font-weight: 500;
+    margin-top: 0;
+} 
+
+p{
+  width: -webkit-fill-available;
+  display: flex;
+}
+  .name{
+    margin-bottom: 0px;
+  }
+
+  .description{
+    padding: 10px;
+  }
+
+  .Cursor{
+    margin: 0px;
+    text-shadow: 1px 1px 1px #000, 0 -1px 1px #000, 1px 1px 1px #000, -1px 0 0 #000, 1px 1px 0 #000, 1px 0 0 #000, 0 -1px 0 #000;
+    color: #fff;
+    font-size: 56px;
+  }
+
+  .Introduction{
+    font-size: 24px;
+    line-height: 42px;
+    color: #4A4A4A;
+  }
+
+  a{
+    text-decoration-line: none;
+    color: black;
+  }
+
+  a:hover{
+    text-decoration-line: none;
+    color: rgb(251, 64, 51);
+  }
+  
+  .links {
+    display: flex;
+  }
+  
+  .links li {
+    text-decoration-line: none;
+    margin-left: 60px;
+    list-style: none;
+    font-size: 18px;
+  }
+  
+  .project-img{
+    width: 50%;
+  }
+
+  .project {
+     padding: 1rem!important;
+     justify-content: space-between;
+     display: flex;
+     height: 600px;
+     border-radius: 4px;
+     margin-bottom: 40px;
+     color: white;
+  }
+
+  .red{   
+    background-color:rgb(251, 64, 51); 
+    }
+    
+
+    /* .red2{
+      background: linear-gradient(to bottom,  #ffffff 0%,#ffffff 30%,#FB4033 30%,#FB4033 100%);
+  } */
+
+  .orange{
+    background-color:rgb(251, 129, 46);   
+    }
+
+  .yellow{
+    background-color:rgb(251, 175, 10); 
+    }
+
+  .problems:hover {
+    background-color:rgb(251, 64, 51); 
+    color: black;
+    text-shadow:none;
+    animation-name: animation;
+    animation-duration: 2s;
+    }
+
+  .ideas:hover{
+    background-color:rgb(251, 129, 46);  
+    color: black;
+    text-shadow:none;
+    animation-name: animation;
+    animation-duration: 2s;
+    }
+
+  .solutions:hover{
+    background-color:rgb(251, 175, 10);
+    color: black;
+    text-shadow:none;
+    }
+
+    .phone{
+        margin: 0px;
+        width: 250px;
+        object-fit: contain;
+    }
+
+    .pc{
+        margin: 0px;
+        width: 800px;
+        object-fit: contain;
+    }
+
+    .vector{
+        margin: 0px;
+        width: 600px;
+        object-fit: contain;
+    }
+
+    .project-info{
+        flex-direction: column;
+        margin: 10px auto;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;   
+}
+
+    .project-img {
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+/* 
+    button{
+        text-decoration: #4A4A4A;
+        font-family: "Avenir Next";
+        font-weight: 100;
+        font-size: 36px;
+        height: 70px;
+        width: 234px;
+        border-radius: 35px;
+    }
+
+    button:hover{
+        text-shadow:none;
+        text-decoration: white;
+        background-color:#4A4A4A;  
+    }
+     */
+    .button {
+        border-radius: 35px;
+        border: 2px solid #fff;
+        cursor: pointer;
+        letter-spacing: 0.2125rem;
+        overflow: hidden;
+        padding: 20px 30px;
+        position: relative;
+        text-align: center;
+        text-transform: uppercase;
+        transition: 
+            background 5s cubic-bezier(0.19, 1, 0.22, 1),
+            border 1s cubic-bezier(0.19, 1, 0.22, 1),
+            color 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+        user-select: none;
+    }
+    
+    .button a {
+        color:#fff;
+        font-family: "Avenir Next";
+        text-decoration: none;
+    }
+    
+    .button .mask {
+        background-color: #fff;
+        background-color: rgba(255, 255, 255, 0.5);
+        height: 100px;
+        position: absolute;
+        transform: translate3d(-120%, -50px, 0) rotate3d(0, 0, 1, 45deg);
+        transition: all 1.1s cubic-bezier(0.19, 1, 0.22, 1);
+        width: 200px;
+    }
+    
+    .button .shift {
+        display: inline-block;
+        transition: all 1.1s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+    
+    .button:hover {
+        background-color: rgba(255, 255, 255, 0.05);
+        border-color: #fff;
+        box-shadow: 0 0 5px rgba(255, 245, 245, 0.8);
+        transition: 0s;
+    }
+    
+    .button:hover a {
+        color: #fff;
+    }
+    
+    .button:hover .mask {
+        background-color: #fff;
+        transform: translate3d(120%, -100px, 0) rotate3d(0, 0, 1, 90deg);
+    }
+    
+    .button:hover .shift {
+        transform: translateX(5px);
+    }
+    
+    .button:active {
+        background-color: #fff;
+    }
+    
+    .button:active a {
+        color: #202020;
+    }
+    
+    body.show {
+        background-color: #282828;
+    }
+
+    .contact {
+        font-family: "Avenir Next";
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .contact li {
+        justify-content: space-between;
+        margin-right: 60px;
+        list-style: none;
+        font-size: 18px;
+      }
+
+      .mobile-screen{
+        font-family: "Avenir Next";
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        background-color: tomato;
+        height: 100vh;
+      }
+
+      .mobile-screen p {
+        text-align: center;
+        width: unset;
+      }
+
+      
+      @media only screen and (max-width:414px){
+        .desktop-screen{
+          display: none;
+        }
+
+      }
+
+      @media only screen and (min-width:415px){
+        .desktop-screen{
+          display: block;
+        }
+
+        .mobile-screen{
+          display: none;
+        }
+      }
+
+
+      
+      /* .bg1 {
+        background-color: red;
+        height: 75vh;
+      }
+
+      .bg2 {
+        background-color: blue;
+        height: 75vh;
+      }
+
+      .bg3 {
+        background-color: yellow;
+        height: 75vh;
+      }
+
+      .horizontal-scroll-wrapper {
+        width: 100vw;
+        height: 75vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+      }
+
+      .horizontal-scroll-wrapper > div {
+        width: 100px;
+        height: 75px;
+      } */

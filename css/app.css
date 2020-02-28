@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+  }
+  header{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    font-family: "Avenir Next";
+    font-style: normal;
+  }
+
+  nav {
+    padding:20px;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Avenir Next";
+    font-size: 16px;
+    font-style: normal;
+    color: #4A4A4A;
+    line-height: 1; 
+  }
+
+  a{
+    text-decoration-line: none;
+    color: black;
+  }
+
+  a:hover{
+    text-decoration-line: none;
+    color: rgb(251, 64, 51);
+  }
+
+
